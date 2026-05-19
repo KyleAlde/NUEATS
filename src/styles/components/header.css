@@ -1,0 +1,44 @@
+header {
+    height: 50px;
+    width: 100%;
+    background-color: #FFFFFF;
+    margin: auto -16px;
+    padding: 16px 32px;
+    box-shadow: 0 0 7.5px 0 rgba(0, 0, 0, 0.3);
+}
+
+#CenterDiv {
+    align-items: center;
+    padding: 0px 18.75%;
+}
+
+#SearchDiv{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12.5px 0;
+}
+
+#SearchInput {
+    height: 23px;
+    width: 100%;
+    background-color: #F9F8F8;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.18);
+    font-size: 12px;
+}
+
+#SearchInput::placeholder {
+  color: #8F8E8E;
+  opacity: 1;
+  padding: 8px 12px;
+}
+
+#LogoText {
+    height: 25px;
+    filter: drop-shadow(-1px 0px 1.5px rgba(0, 0, 0, 0.3));
+}
