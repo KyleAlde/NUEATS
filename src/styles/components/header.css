@@ -42,7 +42,7 @@ header {
 
 .SearchWrapper {
     position: relative;
-    width: 100%;
+    flex: 1;
 }
 
 .SearchIcon {

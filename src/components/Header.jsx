@@ -25,10 +25,10 @@ function Header(props) {
                 </button>
               </div>
 
-              <button className="NavButton">
+              <button className="NavButton" onClick={props.onOpenProfile}>
                 <img src={user} className="NavIcon" alt="User"/>
               </button>
-              <button className="NavButton" onClick={() => props.onOpenCart(true)}>
+              <button className="NavButton" onClick={props.onOpenCart}>
                 <img src={cart} className="NavIcon" alt="Cart"/>
               </button>
 
