@@ -9,6 +9,13 @@ import pancitcanton from "./assets/foodimages/Pancit Canton.png";
 import tokneneng from "./assets/foodimages/Tokneneng.png";
 import cheesestick from "./assets/foodimages/Cheese Stick.png";
 import dynamite from "./assets/foodimages/Dynamite.png";
+import coke from "./assets/foodimages/coke.png";
+import Sprite from "./assets/foodimages/Sprite.png";
+import Royal from "./assets/foodimages/Royal.png";
+import Nestea from "./assets/foodimages/Nestea.png";
+import Halohalo from "./assets/foodimages/Halohalo.png";
+  
+
 
 const menuItems = [
   {
@@ -100,6 +107,50 @@ const menuItems = [
     price: 999,
     category: "Snack",
     image: dynamite,
+  },
+  {
+    key: 11,
+    name: "Coca Cola",
+    description:
+      "A refreshing carbonated drink with a distinctive flavor, perfect for quenching your thirst and satisfying your taste buds.",
+    price: 999,
+    category: "Drink",
+    image: coke,
+  },
+  {
+    key: 12,
+    name: "Sprite",
+    description:
+      "A refreshing carbonated drink with a distinctive flavor, perfect for quenching your thirst and satisfying your taste buds.",
+    price: 999,
+    category: "Drink",
+    image: Sprite,
+  },
+  {
+    key: 13,
+    name: "Royal",
+    description:
+      "A refreshing carbonated drink with a distinctive flavor, perfect for quenching your thirst and satisfying your taste buds.",
+    price: 999,
+    category: "Drink",
+    image: Royal,
+  },
+  {
+    key: 14,
+    name: "NesTea",
+    description:
+      "A refreshing carbonated drink with a distinctive flavor, perfect for quenching your thirst and satisfying your taste buds.",
+    price: 999,
+    category: "Drink",
+    image: Nestea,
+  },
+  {
+    key: 15,
+    name: "Halo halo",
+    description: "A refreshing dessert perfect for hot summer days.",
+    price: 999,
+    category: "Drink",
+    image: Halohalo,
   },
 ];
 
