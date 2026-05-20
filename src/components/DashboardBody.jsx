@@ -8,7 +8,7 @@ function DashboardBody(props) {
     return (
         <div id="DashboardBody">
             {menuItems
-                .filter(item => item.category === props.category)
+                .filter(item => ( props.category ==="All" || item.category === props.category))
                 .map((item) => (
                     <FoodItem
                         key={item.key}

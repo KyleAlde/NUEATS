@@ -64,6 +64,16 @@ function Header(props) {
               >
                 Drinks
               </button>
+              <button
+                className={
+                  props.category === "All"
+                    ? "FilterButton ActiveFilter"
+                    : "FilterButton"
+                }
+                onClick={() => props.onSelectFilter("All")}
+              >
+                All
+              </button>
             </div>
         </div>
     </header>
