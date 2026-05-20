@@ -7,7 +7,7 @@ import cart from '../assets/icons/Cart.png'
 import search from '../assets/icons/Search.png'
 import user from '../assets/icons/User.png'
 
-function Header() {
+function Header(props) {
   return (
     <header>
         <div id="CenterDiv">
@@ -28,9 +28,36 @@ function Header() {
               <button className="NavButton"><img src={user} className="NavIcon" alt="User"/></button>
             </div>
             <div id="FilterDiv">
-              <button className="FilterButton">Meals</button>
-              <button className="FilterButton">Drinks</button>
-              <button className="FilterButton">Snacks</button>
+              <button
+                className={
+                  props.category === "Meal"
+                    ? "FilterButton ActiveFilter"
+                    : "FilterButton"
+                }
+                onClick={() => props.onSelectFilter("Meal")}
+              >
+                Meals
+              </button>
+              <button
+                className={
+                  props.category === "Snack"
+                    ? "FilterButton ActiveFilter"
+                    : "FilterButton"
+                }
+                onClick={() => props.onSelectFilter("Snack")}
+              >
+                Snacks
+              </button>
+              <button
+                className={
+                  props.category === "Drink"
+                    ? "FilterButton ActiveFilter"
+                    : "FilterButton"
+                }
+                onClick={() => props.onSelectFilter("Drink")}
+              >
+                Drinks
+              </button>
             </div>
         </div>
     </header>

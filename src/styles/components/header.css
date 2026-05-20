@@ -108,3 +108,7 @@ header {
     font-weight: 600;
     color: #2C3C94;
 }
+
+.ActiveFilter {
+    border-bottom: 2px solid #FFD41C;
+}
