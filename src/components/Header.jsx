@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Drawer from '@mui/material/Drawer';
 import '../styles/components/header.css'
 import logoText from '../assets/icons/Logo Text.png'
 import home from '../assets/icons/Home.png'
@@ -23,9 +24,14 @@ function Header(props) {
                     <img src={search} className="SearchIcon" alt="Search" />
                 </button>
               </div>
-              <button className="NavButton"><img src={home} className="NavIcon" alt="Home"/></button>
-              <button className="NavButton"><img src={cart} className="NavIcon" alt="Cart"/></button>
-              <button className="NavButton"><img src={user} className="NavIcon" alt="User"/></button>
+
+              <button className="NavButton">
+                <img src={user} className="NavIcon" alt="User"/>
+              </button>
+              <button className="NavButton" onClick={() => props.onOpenCart(true)}>
+                <img src={cart} className="NavIcon" alt="Cart"/>
+              </button>
+
             </div>
             <div id="FilterDiv">
               <button
